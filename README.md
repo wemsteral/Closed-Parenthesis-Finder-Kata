@@ -1,4 +1,4 @@
-# Closed Parentheses Finder
+# Closed Parentheses Finder Kata
 
 In most text editors, when you select an open parenthesis, the editor will highlight
 the corresponding closing parenthesis. Write code that implements this feature. Specifically, given a valid

@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-class Brackets
+class ParenthesisFinder
   def initialize
     @open_counter = 0
     @close_counter = 0

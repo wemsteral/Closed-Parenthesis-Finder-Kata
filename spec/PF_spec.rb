@@ -1,9 +1,9 @@
 # frozen_string_literal: true
 
-require './lib/brackets.rb'
+require './lib/PF'
 
-describe Brackets do
-  let(:subject) { Brackets.new }
+describe ParenthesisFinder do
+  let(:subject) { ParenthesisFinder.new }
   describe 'solution' do
     it 'returns 1 when given () & 0' do
       expect(subject.solution('()', 0)).to eq(1)
