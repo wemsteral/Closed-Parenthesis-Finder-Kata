@@ -13,11 +13,11 @@ describe Brackets do
       expect(subject.solution('((())())', 1)).to eq(4)
     end
 
-    it 'returns 4 when given ((()())()) & 3 ' do
+    it 'returns -1 when given ((()())()) & 3 ' do
       expect(subject.solution('((()())())', 3)).to eq(-1)
     end
 
-    it 'returns 4 when given ((()())()) & 7' do
+    it 'returns 8 when given ((()())()) & 7' do
       expect(subject.solution('((()())())', 7)).to eq(8)
     end
 
@@ -25,7 +25,7 @@ describe Brackets do
       expect(subject.solution('((()()))', 1)).to eq(6)
     end
 
-    it 'returns 6 when given ()(()())((())) & 2' do
+    it 'returns 7 when given ()(()())((())) & 2' do
       expect(subject.solution('()(()())((()))', 2)).to eq(7)
     end
 
