@@ -44,6 +44,18 @@ describe Brackets do
     it 'ANTS TEST 4' do
       expect(subject.solution('()()()()((()())())', 4)).to eq(5)
     end
+
+    it 'ANTS TEST 5' do
+      expect(subject.solution('()((()())())()', 2)).to eq(11)
+    end
+
+    it 'ANTS TEST 6' do
+      expect(subject.solution('()((()())())()', 3)).to eq(8)
+    end
+
+    it 'ANTS TEST 7' do
+      expect(subject.solution('()((()())())()', 4)).to eq(5)
+    end
   end
 end
 
