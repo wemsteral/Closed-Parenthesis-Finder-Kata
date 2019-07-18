@@ -12,10 +12,12 @@ describe Brackets do
     it 'returns 4 when given ((())()) & 1 ' do
       expect(subject.solution('((())())', 1)).to eq(4)
     end
+
+    it 'returns 4 when given ((()())()) & 3 ' do
+      expect(subject.solution('((()())())', 3)).to eq(-1)
+    end
   end
 end
 
-# solution('((())())', 1) # answer = 4
-# solution('()', 0) # answer = 1
 # solution('((()())())', 3) # answer = -1
 # solution('((()())())', 7) # answer = 8
