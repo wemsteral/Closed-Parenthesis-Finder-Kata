@@ -1,12 +1,9 @@
 # frozen_string_literal: true
 
 class ParenthesisFinder
-  def initialize
+  def solution(parentheses, index)
     @open_counter = 0
     @close_counter = 0
-  end
-
-  def solution(parentheses, index)
     parentheses = parentheses.split('')
     if parentheses[index] == ')'
       p -1
