@@ -5,8 +5,12 @@ require './lib/brackets.rb'
 describe Brackets do
   let(:subject) { Brackets.new }
   describe 'solution' do
-    it 'returns 1 when given ()' do
+    it 'returns 1 when given () & 0' do
       expect(subject.solution('()', 0)).to eq(1)
+    end
+
+    it 'returns 4 when given ((())()) & 1 ' do
+      expect(subject.solution('((())())', 1)).to eq(4)
     end
   end
 end
