@@ -10,6 +10,9 @@ class Brackets
     parentheses = parentheses.split('')
     if parentheses[index] == ')'
       p -1
+    elsif
+      parentheses[index + 1] == ')'
+      p index + 1
     else
       parentheses.drop(index + 1).each do |x|
         @open_counter += 1 if x == '('
